@@ -1,0 +1,658 @@
+/*  È, è  */
+
+/*   COLORS:
+BROWN --------------- #592F16 
+GRAY ------------------- #A6A498
+DARK MATCHA ------- #585936
+MEDI MATCHA ------- #8A8C54
+LIGHT MATCHA ------ #BDBF73
+*/
+
+/* type "font-family: "CGaramond ###", serif"*/
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url(./fonts/HomemadeApple-Regular.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CGaramond B";
+    src: url(./fonts/CormorantGaramond-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CGaramond BI";
+    src: url(./fonts/CormorantGaramond-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CGaramond SB";
+    src: url(./fonts/CormorantGaramond-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CGaramond SBI";
+    src: url(./fonts/CormorantGaramond-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CGaramond M";
+    src: url(./fonts/CormorantGaramond-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CGaramond MI";
+    src: url(./fonts/CormorantGaramond-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CGaramond R";
+    src: url(./fonts/CormorantGaramond-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CGaramond RI";
+    src: url(./fonts/CormorantGaramond-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "CGaramond L";
+    src: url(./fonts/CormorantGaramond-Light.ttf);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CGaramond LI";
+    src: url(./fonts/CormorantGaramond-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: "CGaramond R", serif;
+    background-color: #FFFFFF;
+}
+
+
+/* NAVBAR ----------------- */
+.navbar {
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background-color: #FFFFFF;
+    position: fixed;
+    box-shadow: 2px 1px 4px gray;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+
+}
+
+.navbar img {
+    height: 50%;
+    padding-left: 1.67rem;
+    flex-wrap: nowrap;
+}
+
+.navitems {
+    list-style: none;
+    display: inline-flex;
+    padding: 0rem 2rem;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.navbar ul li a {
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+.navbar ul li a div {
+    line-height: 3.5rem;
+}
+
+.navitems:hover {
+    background-color: #BDBF73;
+}
+
+
+/* BANNER ----------------- */
+
+.banner {
+    height: 45.6rem;
+    width: 100%;
+}
+
+.bannerclip {
+    object-fit: cover;
+    height: 45.6rem;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+
+.signupform {
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    text-align: left;
+    color: #592F16;
+    background-color: #BDBF73;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+
+.signupform a {
+    color: #592F16;
+}
+
+.signupform label {
+    font-family: "CGaramond SB";
+    color: #585936;
+}
+
+.signupform label p {
+    padding-left: 1rem;
+
+}
+
+input[type=text],
+input[type=password] {
+    width: 18rem;
+    height: 0.5rem;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    justify-items: flex-start;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+.termsconditions {
+    font-size: 0.9rem;
+    font-family: "CGaramond SB";
+}
+
+.main {
+    font-family: "CGaramond B";
+    color: #585936;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.clearfix button {
+    color: #F0F2F2;
+    background-color: #585936;
+    border: none;
+    padding: 0.4rem 0.5rem;
+    margin: 0rem 0.2rem;
+    font-family: "CGaramond L";
+}
+
+
+
+.subcontent img {
+    height: 15rem;
+    border: #585936 solid 2rem;
+}
+
+.content {
+    margin: auto;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.textcontainer {
+    text-align: justify;
+}
+
+
+.subcontent {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-items: center;
+    padding-top: 2rem;
+}
+
+.subcontent p {
+    padding-left: 2rem;
+}
+
+.subtitleleft {
+    font-family: "CGaramond B";
+    font-size: 2.5rem;
+    padding: 5rem 0rem 1rem 0rem;
+    color: #585936;
+    text-decoration: underline #592F16 0.05rem;
+    text-underline-offset: 1rem;
+}
+
+.subtitleright {
+    font-family: "CGaramond B";
+    font-size: 2.5rem;
+    padding: 5rem 0rem 1rem 0rem;
+    color: #592F16;
+    text-decoration: underline #585936 0.05rem;
+    text-underline-offset: 1rem;
+    text-align: right;
+}
+
+.upcomingevents,
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.event,
+.item {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+
+
+.event:hover,
+.location:hover,
+.item:hover {
+    box-shadow: #585936 0rem 0rem 0.5rem;
+    cursor: pointer;
+}
+
+
+.eventdescription {
+    text-align: center;
+    width: 20rem;
+    padding: 1rem 0rem 2rem 0rem;
+    background-color: #592F16;
+    color: #f1f1f1;
+}
+
+.drinkdescription {
+    text-align: center;
+    width: 20rem;
+    padding: 1rem 0rem 2rem 0rem;
+    background-color: #BDBF73;
+    color: #585936;
+}
+
+.eventdescription h4,
+.location h4,
+.drinkdescription h4 {
+    font-family: "CGaramond B";
+
+}
+
+.eventdescription p,
+.location p {
+    font-family: "CGaramond M";
+
+}
+
+.eventimage {
+    height: 15rem;
+    width: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.event1 {
+    background-image: url(./photos/tea-farm.jpg);
+}
+
+.event2 {
+    background-image: url(./photos/coffee-factory.jpg);
+}
+
+.event3 {
+    background-image: url(./photos/tea-ceremony-landscape.jpg);
+}
+
+.event4 {
+    background-image: url(./photos/matcha-workshop-portrait.jpg);
+}
+
+.event5 {
+    background-image: url(./photos/tea-farmer.jpg);
+}
+
+
+
+.cafes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.location {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.locationimage1 {
+    background-image: url(./photos/cafe1.jpg);
+}
+
+.locationimage2 {
+    background-image: url(./photos/cafe2.jpg);
+}
+
+.locationimage3 {
+    background-image: url(./photos/cafe3.jpg);
+}
+
+.locationimage {
+    height: 25rem;
+    width: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.address {
+    text-align: center;
+    width: 20rem;
+    padding: 1rem 0rem 2rem 0rem;
+    background-color: #592F16;
+    color: #f1f1f1;
+}
+
+.searchsubtitle {
+    padding: 3rem 0rem 1.5rem 0rem;
+    font-family: "CGaramond B";
+    text-align: center;
+    font-size: 2rem;
+    color: #585936;
+}
+
+.searchcafe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.searchcafe input {
+    width: 50%;
+    border: #585936 solid 0.05rem;
+    height: 2rem;
+}
+
+.searchcafe button {
+    width: 10%;
+    background-color: #BDBF73;
+    border: none;
+    height: 2rem;
+    color: #585936;
+    font-family: "CGaramond B";
+}
+
+.searchcafe button:hover{
+cursor: pointer;
+box-shadow: #585936 0.1rem 0.1rem 0.2rem;;
+}
+
+
+.drinkimage {
+    height: 20rem;
+    width: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90% 80%;
+}
+
+.drinkimage1 {
+    background-image: url(./photos/coffee.jpg);
+}
+
+.drinkimage2 {
+    background-image: url(./photos/cold-brews.jpg);
+}
+
+
+.drinkimage3 {
+    background-image: url(./photos/chai.jpg);
+}
+
+
+.drinkimage4 {
+    background-image: url(./photos/matcha-tea.jpg);
+}
+
+
+.drinkimage5 {
+    background-image: url(./photos/fruit-tea.jpg);
+}
+
+
+.drinkimage6 {
+    background-image: url(./photos/flower-tea.jpg);
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    color: #f1f1f1;
+    background-color: #585936;
+    font-size: 1.2rem;
+}
+
+.footeritems {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    cursor: pointer;
+}
+
+.quote {
+    font-family: "Homemade Apple";
+}
+
+
+
+/* <1024px ------------------------- */
+@media screen and (max-width: 1024px){
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        height: 40.6rem;
+    }
+
+    .bannerclip {
+        height: 40.6rem;
+    }
+
+    .subcontent {
+        display: flex;
+        align-items: center;
+    }
+
+    .subtitleleft,
+    .subtitleright {
+        font-size: 2rem;
+    }
+
+    .locationimage {
+        height: 20rem;
+        width: 15rem;
+    }
+
+
+    .address {
+        width: 15rem;
+    }
+
+    .searchsubtitle {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* <768px ------------------------- */
+@media screen and (max-width: 768px){
+    body {
+        font-size: 12px;
+    }
+
+    .banner {
+        height: 35.6rem;
+    }
+
+    .bannerclip {
+        height: 35.6rem;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 12rem;
+        height: 0.2rem;
+
+    }
+
+    .signupform {
+        z-index: 1;
+        position: absolute;
+        top: 20%;
+        left: 15%;
+
+    }
+
+    .termsconditions {
+        font-size: 0.6rem;
+        font-family: "CGaramond SB";
+    }
+
+    .main {
+        font-family: "CGaramond B";
+        color: #585936;
+        font-size: 1.3rem;
+    }
+
+    .clearfix button {
+        padding: 0.4rem 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .content {
+        margin: auto;
+        width: 90%;
+    }
+
+    .subcontent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .subcontent img {
+        height: 12rem;
+
+    }
+
+    .subtitleleft,
+    .subtitleright {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+
+    .drinkimage {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .drinkdescription {
+        width: 10rem;
+    }
+
+    .locationimage {
+        height: 15rem;
+        width: 10rem;
+    }
+
+    .eventimage {
+        height: 10rem;
+        width: 15rem;
+    }
+
+    .eventdescription {
+        width: 15rem;
+    }
+
+    .address {
+        width: 10rem;
+    }
+
+    .searchsubtitle {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
